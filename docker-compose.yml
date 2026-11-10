@@ -1,0 +1,13 @@
+services:
+  invoice-bot:
+    build: .
+    container_name: invoice-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      EXCEL_PATH: /app/data/facturas.xlsx
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data

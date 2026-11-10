@@ -1,0 +1,19 @@
+# Environment / secrets
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated files
+data/*.xlsx
+data/*.xlsx.tmp
+sample_invoice.png
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
